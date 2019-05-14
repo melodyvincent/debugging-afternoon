@@ -4,6 +4,10 @@ import "./ShoppingCart.css";
 class ShoppingCart extends Component {
   render() {
     let shoppingCartDisplay = this.props.shoppingCart.map((element, index) => {
+        console.log(this.props.shoppingCart)
+        let shoppingCartDisplay = this.props.shoppingCart.map((element, index) => {
+          console.log(element)
+        })
       return (
         <div className="shopping-cart-product-container" key={index}>
           <img src={element.image} alt="" />
